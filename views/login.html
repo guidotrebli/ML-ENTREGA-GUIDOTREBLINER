@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mercado Liebre</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1abdb540d6.js" crossorigin="anonymous"></script>  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <title>Login</title>
+</head>
+<body>
+<header>
+    <section class="topbar">
+        <a href="/home" class="logo"> <img src="/images/logo-mercado-liebre.svg" width="300px" alt="Logo MercadoLiebre"> </a>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Buscar artículos">
+            <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="promo">
+            <p> <i class="fa-regular fa-credit-card"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+    </section>
+    <section class="navbar">
+        <ul id="izq" class="links">
+            <li><a href= '/ofertas'>Ofertas </a></li>
+            <li><a href= '/tiendasOficiales'>Tiendas oficiales</a> </a></li>
+            <li><a href= '/vender'>Vender </a></li>
+            <li><a href= '/ayuda'>Ayuda </a></li>
+       </ul>
+       <ul id="der" class='links'>
+        <li><a href= '/signup'>Creá tu cuenta <i class="fa-solid fa-user-plus"></i></a></li>
+        <li><a href= '/login'>Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+        <li><a href= '/misCompras'>Mis compras <i class="fa-solid fa-bag-shopping"></i></a></li>
+       </ul>
+    </section>
+    <section class="menu">
+        <div class="burgermenu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </section>
+</header>
+<main class="containerForm">
+  <form action="resultado.html" method="POST">
+    <h3>Ingresá</h3>
+    <input class="textinput" type="text" name="nombre" placeholder="Nombre de usuario" required>
+    <input class="textinput" type="password" name="password" placeholder="Contraseña" required>
+    <button type="submit">Entrar</button>
+  </form>
+</main>
+</body>
+</html>

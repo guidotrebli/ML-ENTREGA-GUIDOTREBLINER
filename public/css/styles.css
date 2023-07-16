@@ -1,0 +1,507 @@
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  
+  main{
+    background-color: #ebebeb;
+  }
+  
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  
+ 
+  .links li {
+    font-size: 14px;
+    display: flex;
+  }
+  
+  #izq{
+    justify-content: flex-start;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  #der{
+    justify-content: flex-end;
+  }
+  
+  img{
+    width: 100%;
+  } 
+  
+  p {
+    font-size: 14px;
+  }
+  
+  h3{
+    font-size: 24px;
+    font-weight: 500;
+    color: dimgrey;
+  }
+  
+  
+  .search-input {
+    padding: 8px;
+    border-bottom: #ffffff;
+    border-top: #ffffff;
+    border-left: #ffffff;
+    border-right: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 100%;
+  }
+  
+  .search-bar {
+      display: flex;
+      width: 50%;
+    }
+  
+    .search-button:hover {
+        background-color: #0056b3;
+        color: #ffffff;
+      }
+    
+  .search-button {
+    padding: 8px 12px;
+    background-color: #ffffff;
+    color: #a7a7a7;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+    
+  
+  header{
+    width: 100%;
+    background-color: #EAC926;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  
+  }
+  .logo{
+    width: 50%;
+    padding: 8px 8px 8px 0px;
+  }
+  
+  .promo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+  }
+  
+  .topbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .links{
+    display: none;
+  }
+  
+  .navbar{
+    display: none;
+  }
+  
+  .menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .burgermenu{
+    width: 32px;
+    background-color: #03264C;
+    border-radius: 4px;
+    color: white;
+    padding: 8px;
+    align-content: center;
+  }
+  
+  .banner{
+    display: flex;
+    width: 100%;
+  }
+  
+  .container{
+    padding: 24px 0px 48px 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ebebeb;
+    gap: 16px;
+  }
+  
+  .carrusel{
+    max-width: 100%;
+    padding: 0px 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0px;
+    gap: 16px;
+  }
+  
+  .produ{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px 0px rgba(159, 159, 159, 0.503);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    transition: 200ms;
+  }
+  
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 16px;
+    position: relative;
+  }
+  
+    .produ:hover {
+    box-shadow: 0px 5px 10px 0px rgba(29, 29, 29, 0.255);
+  }
+  
+  .produ:hover .nombre { 
+    display: block; 
+  }
+  
+  .fotito{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px 8px 0px 0px;
+  }
+  
+  .descripcion{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px;
+    background-color: white;
+    border-radius: 0px 0px 8px 8px;
+    gap: 16px;
+    border-top: 1px solid #e4e4e4;
+    position: relative;
+  }
+  
+  .envios{
+    display: block;
+    padding: 5px;
+    font-size: 16px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    width: 30px;
+    color: #39b54a;
+    transition: 450ms;
+  }
+  
+  .envios:hover {
+    transform: rotateZ(-90deg)
+  }
+  
+  .costo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .precio{
+    width: 32%;
+    font-size: 16px;
+    color: dimgrey;
+  }
+  
+  .descuento{
+    width: 68%;
+    font-size: 16;
+    color: #39b54a;
+  }
+  
+  .nombre{
+    display: none;
+    font-size: 16px;
+    transition: 200ms;
+  }
+  
+  
+  .beneficios {
+    background-color: white;
+    text-align: center;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+  }
+  
+  footer section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px
+  }
+  
+  footer section h4{
+    font-weight: 500;
+    color: #03264C;
+  }
+  
+  footer section p{
+    color: grey;
+  }
+  
+  footer section i{
+    font-size: 24px;
+    color: #03264C;
+    transition: 200ms;
+  }
+  
+  footer section i:hover{
+    color: #1259c3;
+  }
+  
+.containerForm{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 24px;
+    height: 100%;
+  }
+  
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px 0px rgba(29, 29, 29, 0.255);
+    background-color: white;
+    gap: 16px;
+  }
+  
+  .textinput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .dateinput{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .perfil{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .checkinput{
+    padding: 4px;
+    font-size: 14px;
+    color: grey;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .fileinput{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .passinput{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .interes{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  
+  form button{
+    padding: 8px;
+    border: 0px;
+    background-color: #03264C;
+    color: #ffffff;
+    border-radius: 4px;
+    transition: 200ms;
+  }
+  
+  form button:hover{
+    background-color: #0022aa;
+  }
+  
+  
+
+  /* Tablets */
+  @media (min-width: 460px){
+  
+  
+  
+  .logo{
+    width: 33%;
+    padding: 8px;
+  }
+  
+  .logo img{
+    width: 200px;
+  }
+  
+  .productos{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .produ{
+    width: 47%;
+  }
+  
+  }
+  
+  
+    /* Laptop */
+  @media (min-width: 768px){
+
+  
+  header{
+    width: 100%;
+    background-color: #EAC926;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .topbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  .logo{
+    width: 33%;
+    padding: 8px;
+  }
+  
+  .logo img{
+    width: 200px;
+  }
+  
+  .search-bar {
+    display: flex;
+    width: 32%;
+  }
+  
+  .promo{
+    width: 32%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+  }
+  
+  .navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  
+  .links{
+    width: 48%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .menu{
+    display: none;
+  }
+  
+  .container{
+    padding: 24px 40px 48px 40px;
+  }
+  
+  
+  .productos{
+    flex-direction: row;
+  }
+  
+  .produ{
+    width: 23%;
+  }
+  
+  .beneficios{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  }
+
+  .h6 {
+    text-align: left;
+  }
